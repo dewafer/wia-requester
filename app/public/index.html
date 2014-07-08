@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"></meta>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"></meta>
+	<title>微博影响力分析机</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/site.css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+        <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+    	<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+    		<div class="container">
+    			<div class="navbar-header">
+    				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    					<span class="sr-only">Toggle navigation</span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    				</button>
+    				<a class="navbar-brand" href="/" target="">微博影响力分析机</a>
+    			</div>
+    			<div class="navbar-collapse collapse">
+    				<div class="navbar-form navbar-right">
+    					<!-- <a class="btn btn-default" href="#requestForm">申请参与</a> -->
+
+
+    					<!-- Split button -->
+    					<div class="btn-group">
+    						<a href="#reqform" class="btn btn-default">申请参与</a>
+    						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    							<span class="caret"></span>
+    							<span class="sr-only">Toggle Dropdown</span>
+    						</button>
+    						<ul class="dropdown-menu" role="menu">
+    							<li><a href="#qform">查询结果</a></li>
+<!--     							<li><a href="#">Another action</a></li>
+    							<li><a href="#">Something else here</a></li>
+    							<li class="divider"></li>
+    							<li><a href="#">Separated link</a></li> -->
+    						</ul>
+    					</div>
+
+
+    				</div>
+    			</div> <!--/.navbar-collapse -->
+    		</div>
+    	</div>
+
+    	<!-- Main jumbotron for a primary marketing message or call to action -->
+    	<div class="container">
+
+    		<!-- Error message block -->
+    		<div class="alert alert-danger alert-dismissable hidden" id="errorPanel">
+    			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    			<strong>有错误</strong> <span id="errorMsg"></span>
+    		</div>
+
+
+
+    		<div class="jumbotron">
+    			<h1><a href="http://weiboanalyzer.ng.bluemix.net/" target="_blank">微博影响力分析机</a> <img src="img/WEIBO_LOGO_64x64.png"/> <small>Alpha</small></h1>
+    			<p>微博影响力分析机是一款部署并运行在BlueMix上的微博Web App演示程序，能够计算并分析微博用户的影响力值。点击下方了解更多按钮来测测看你是战斗力只有5的渣渣，还是影响力爆表的微博达人？</p>
+    			<p>由于微博影响力分析机程序仍处于开发阶段，仅向参与测试的人员开放。有兴趣成为测试人员？填写<a href="#requestForm">下方表格</a>参与测试，为美好未来出一把力。</p>
+    			<!-- <p><a class="btn btn-primary btn-lg" role="button">了解更多 &raquo;</a></p> -->
+
+    			<!-- Single button -->
+    			<div class="btn-group">
+    				<button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown">
+    					了解更多 &raquo; <!-- <span class="caret"></span> -->
+    				</button>
+    				<ul class="dropdown-menu" role="menu">
+    					<li><a href="http://weiboanalyzer.ng.bluemix.net/" target="_blank">在BlueMix上运行一下</a></li>
+    					<li><a href="https://github.com/dewafer/weibo_influence_analyzer" target="_blank">Fork on GitHub</a></li>
+    					<li><a href="https://hub.jazz.net/project/dewafer/weibo_influence_analyzer/overview" target="_blank">Fork on JazzHub</a></li>
+    					<li class="divider"></li>
+    					<li><a href="https://ace.ng.bluemix.net/" target="_blank">IBM Codename: BlueMix</a></li>
+    					<li><a href="https://github.com/ibmjstart/bluemix-java-sample-twitter-influence-app" target="_blank">源自Twitter Influence Analyzer</a></li>
+    					<li><a href="http://weibo.com/dewafer" target="_blank">我的微博</a></li>
+    				</ul>
+    			</div>
+
+    		</div>
+
+    		<!-- START THE FEATURETTES -->
+    		<hr class="featurette-divider">
+
+    		<div class="row featurette">
+    			<div class="col-md-7">
+    				<h2 class="featurette-heading">微博影响力分析机 <span class="text-muted">你的微博影响力有多少？</span></h2>
+    			</div>
+    			<div class="col-md-5">
+    				<a href="img/picture4.png" target="_blank"><img class="featurette-image img-responsive" src="img/picture4s.jpg" alt="APP主界面" title="APP主界面"></a>
+    			</div>
+    		</div>
+
+    		<hr class="featurette-divider">
+
+    		<div class="row featurette">
+    			<div class="col-md-5">
+    				<a href="img/picture5.png" target="_blank"><img class="featurette-image img-responsive" src="img/picture5s.jpg" alt="分析结果保存至BlueMix云DB" title="分析结果保存至BlueMix云DB"></a>
+    			</div>
+    			<div class="col-md-7">
+    				<h2 class="featurette-heading">微博影响力分析机 <span class="text-muted">是战斗力只有5的渣渣？</span></h2>
+    			</div>
+    		</div>
+
+    		<hr class="featurette-divider">
+
+    		<div class="row featurette">
+    			<div class="col-md-7">
+    				<h2 class="featurette-heading">微博影响力分析机 <span class="text-muted">还是影响力爆表的微博达人？</span></h2>
+    			</div>
+    			<div class="col-md-5">
+    				<a href="img/picture9.png" target="_blank"><img class="featurette-image img-responsive" src="img/picture9s.jpg" alt="Google地图API找出最近发微博的地点" title="Google地图API找出最近发微博的地点"></a>
+    			</div>
+    		</div>
+
+    		<hr class="featurette-divider">
+
+    		<div class="row featurette">
+    			<div class="col-md-5">
+    				<a href="img/picture10.png" target="_blank"><img class="featurette-image img-responsive" src="img/picture10s.jpg" alt="BlueMix云支持" title="BlueMix云支持"></a>
+    			</div>
+    			<div class="col-md-7">
+    				<h2 class="featurette-heading">微博影响力分析机 <span class="text-muted">我们拭目以待</span></h2>
+    			</div>
+    		</div>
+
+    		<hr class="featurette-divider">
+
+    		<!-- /END THE FEATURETTES -->
+
+    		<!-- STAR THE FROM -->
+    		<div class="row">
+    			<div class="col-xs-12 col-sm-8 col-sm-offset-2 col">
+
+    				<ul class="nav nav-tabs">
+    					<li class="active"><a href="#reqform">申请</a></li>
+    					<li><a href="#qform">查询</a></li>
+    				</ul>
+    				<div id="reqform" role="tab-content">
+    					<div class="page-header">
+    						<h3>测试资格申请 <small id="api-data-info-here"></small></h3>
+    					</div>
+    					<form role="form" id="requestForm" method="post" action="request">
+                            <fieldset>
+    						<div class="form-group">
+    							<label for="username">真实姓名  <span class="label label-danger hidden"></span></label>
+    							<input type="text" maxlength="100" class="form-control" id="username" name="name" placeholder="客官如何称呼？">
+    						</div>
+    						<div class="form-group">
+    							<label for="nickname">微博昵称  <span class="label label-danger hidden"></span></label>
+    							<input type="text" maxlength="100" class="form-control" id="nickname" name="weiboname" placeholder="填写正确的微博昵称才能获得测试资格哦～">
+    						</div>
+    						<div class="form-group">
+    							<label for="email">邮件地址  <span class="label label-danger hidden"></span></label>
+    							<input type="email" maxlength="100" class="form-control" id="email" name="email" placeholder="填写邮箱地址我才能告诉你是否申请成功啊喂">
+    						</div>
+    						<button type="submit" class="btn btn-success btn-lg">提交</button>
+                            </fieldset>
+    					</form>
+    				</div>
+
+    				<div id="qform" class="hidden" role="tab-content">
+    					<div class="page-header">
+    						<h3>查询申请结果</h3>
+    					</div>
+    					<form id="queryForm" class="form-group" role="form" method="get" action="/users">
+    						<div class="form-group">
+    							<label for="weiboname">请输入微博昵称  <span class="label label-danger hidden"></span></label>
+    							<input type="text" maxlength="100" class="form-control" id="weiboname" placeholder="请输入微博昵称" name="wn">
+    						</div>
+    						<div class="form-group">
+    							<label for="email">请输入邮箱  <span class="label label-danger hidden"></span></label>
+    							<input type="email" maxlength="100" class="form-control" id="email" placeholder="请输入邮箱" name="em">
+    						</div>
+    						<button type="submit" class="btn btn-success btn-lg">查询</button>
+    					</form>
+    				</div>
+
+    			</div>
+    		</div>
+    		<!-- /END THE FORM -->
+
+    		<!-- FOOTER -->
+    		<footer>
+    			<p class="pull-right"><a href="#">Back to top</a></p>
+    			<p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    		</footer>
+    	</div>
+
+    	<script src="js/jquery/1.11.0/jquery.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+    	<script src="js/site.js"></script>
+    </body>
+    </html>
+

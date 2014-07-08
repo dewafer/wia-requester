@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+var debug = require('debug')('requester');
+var app = require('../app');
+var env = require('../lib/cloud_env_params').localhost;
+
+app.set('port', env.port);
+app.set('host', env.host);
+
+var server = app.listen(app.get('port'), app.get('host'), function() {
+  debug('Express server listening on port ' + server.address().port);
+});
